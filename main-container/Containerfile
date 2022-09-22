@@ -1,0 +1,43 @@
+FROM fedora-toolbox:36
+
+RUN dnf upgrade --refresh -y
+
+RUN dnf install -y \
+  ShellCheck \
+  bat \
+  binutils \
+  cmake \
+  exa \
+  fd-find \
+  fuse \
+  fuse-devel\
+  fzf \
+  g++ \
+  gcc \
+  gcc-c++ \
+  gettext \
+  gmp \
+  gmp-devel \
+  go \
+  libnotify \
+  libstdc++-static \
+  libtool \
+  lua \
+  make \
+  ncurses \
+  ncurses-compat-libs \
+  ninja-build \
+  npm \
+  perl \
+  python-pip \
+  ripgrep \
+  unzip \
+  wl-clipboard \
+  xdg-user-dirs \
+  xz \
+  zip \
+  zsh
+
+RUN dnf clean all
+
+CMD /bin/bash
