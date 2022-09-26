@@ -29,6 +29,7 @@ RUN dnf install -y \
   ninja-build \
   npm \
   perl \
+  python \
   python-pip \
   ripgrep \
   unzip \
