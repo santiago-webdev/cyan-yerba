@@ -7,6 +7,7 @@ RUN dnf install -y \
   bat \
   binutils \
   cmake \
+  dnf-plugins-core \
   exa \
   fd-find \
   fuse \
@@ -24,14 +25,17 @@ RUN dnf install -y \
   libtool \
   lua \
   make \
+  ncompress \
   ncurses \
   ncurses-compat-libs \
   ninja-build \
   npm \
+  p7zip-plugins \
   perl \
   python \
   python-pip \
   ripgrep \
+  unrar \
   unzip \
   wl-clipboard \
   xdg-user-dirs \
