@@ -1,12 +1,13 @@
 FROM fedora-toolbox:36
 
-LABEL maintainer="santiagogonzalezbogado@gmail.com"
+MAINTAINER Santiago Gonzalez "santiagogonzalezbogado@gmail.com"
+
 LABEL version="0.0.1"
 LABEL description="Main container for the maintainer"
 
-RUN dnf upgrade --refresh -y
+RUN dnf upgrade --refresh --assumeyes
 
-RUN dnf install -y \
+RUN dnf install --assumeyes \
   ShellCheck \
   bat \
   binutils \
@@ -47,6 +48,8 @@ RUN dnf install -y \
   xz \
   zip \
   zsh
+
+RUN dnf upgrade --refresh --assumeyes
 
 RUN dnf clean all
 

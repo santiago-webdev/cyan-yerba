@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-podman build --file ./main-container/Containerfile -t build-main
+podman build -t build-main .
 toolbox create -c main --image localhost/build-main
