@@ -1,5 +1,9 @@
 FROM fedora-toolbox:36
 
+LABEL maintainer="santiagogonzalezbogado@gmail.com"
+LABEL version="0.0.1"
+LABEL description="Main container for the maintainer"
+
 RUN dnf upgrade --refresh -y
 
 RUN dnf install -y \
@@ -17,6 +21,7 @@ RUN dnf install -y \
   gcc \
   gcc-c++ \
   gettext \
+  gh \
   gmp \
   gmp-devel \
   go \
