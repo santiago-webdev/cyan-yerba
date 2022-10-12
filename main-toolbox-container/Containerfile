@@ -43,6 +43,7 @@ RUN dnf install --assumeyes \
   python \
   python-pip \
   ripgrep \
+  tree-sitter-cli \
   unrar \
   unzip \
   vulkan \
