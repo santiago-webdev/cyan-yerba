@@ -1,8 +1,7 @@
-# csj-kinoite 📘
-Some scripts and DockerFiles to set Fedora Kinoite up.
+# yerba-kinoite 📘
+A few scripts and Containerfiles to configure Fedora Kinoite.
 
-You should run:
+You should update before running any script.
 ```bash
 rpm-ostree upgrade
 ```
-before running any script.
