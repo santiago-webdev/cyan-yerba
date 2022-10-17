@@ -8,8 +8,8 @@ LABEL description="MySQL Container image for testing purposes"
 ENV MYSQL_ROOT_PASSWORD testing-password
 ENV MYSQL_PASSWORD testing-password
 ENV MYSQL_USER testing-user
-ENV MYSQL_DATABASE Employees
+ENV MYSQL_DATABASE DevelopmentDB
 
-ADD Employees.sql /docker-entrypoint-initdb.d
+ADD DevelopmentDB.sql /docker-entrypoint-initdb.d
 
 EXPOSE 3306
