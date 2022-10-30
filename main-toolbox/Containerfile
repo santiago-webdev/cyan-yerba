@@ -1,0 +1,58 @@
+FROM fedora-toolbox:37
+
+MAINTAINER Santiago Gonzalez "santiagogonzalezbogado@gmail.com"
+
+LABEL version="0.0.1"
+LABEL description="Main container for the maintainer"
+
+RUN dnf upgrade --refresh --assumeyes
+
+RUN dnf install --assumeyes \
+  ShellCheck \
+  bat \
+  binutils \
+  cmake \
+  dnf-plugins-core \
+  exa \
+  fd-find \
+  fuse \
+  fuse-devel\
+  fzf \
+  g++ \
+  gcc \
+  gcc-c++ \
+  gettext \
+  gh \
+  gmp \
+  gmp-devel \
+  go \
+  libnotify \
+  libstdc++-static \
+  libtool \
+  lua \
+  make \
+  mesa-dri-drivers \
+  mesa-vulkan-drivers \
+  ncompress \
+  ncurses \
+  ninja-build \
+  p7zip-plugins \
+  perl \
+  python \
+  python-pip \
+  ripgrep \
+  tree-sitter-cli \
+  unrar \
+  unzip \
+  vulkan \
+  wl-clipboard \
+  xdg-user-dirs \
+  xz \
+  zip \
+  zsh
+
+RUN dnf upgrade --refresh --assumeyes
+
+RUN dnf clean all
+
+CMD /bin/bash
