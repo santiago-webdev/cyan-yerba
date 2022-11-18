@@ -11,6 +11,7 @@ RUN dnf install --assumeyes \
   ShellCheck \
   bat \
   binutils \
+  cloc \
   cmake \
   dnf-plugins-core \
   exa \
@@ -26,9 +27,11 @@ RUN dnf install --assumeyes \
   gmp \
   gmp-devel \
   go \
+  libX11-devel \
   libnotify \
   libstdc++-static \
   libtool \
+  libxcb \
   lua \
   make \
   mesa-dri-drivers \
@@ -36,6 +39,8 @@ RUN dnf install --assumeyes \
   ncompress \
   ncurses \
   ninja-build \
+  openssl \
+  openssl-devel \
   p7zip-plugins \
   perl \
   python \
