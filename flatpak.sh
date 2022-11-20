@@ -12,4 +12,6 @@ flatpak --user -y install flathub \
 	org.qbittorrent.qBittorrent \
 	im.riot.Riot \
 	io.mpv.Mpv \
-	com.github.tchx84.Flatseal
+	com.github.tchx84.Flatseal \
+	org.kde.gwenview \
+	org.kde.okular
