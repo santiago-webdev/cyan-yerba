@@ -1,0 +1,59 @@
+FROM opensuse/tumbleweed:latest
+
+# main-distrobox is a WIP, hopefully I'll not be using distrobox in the future
+# and I'll just use podman alone like in:
+# https://github.com/akdev1l/devenv
+# https://github.com/akdev1l/etbox
+
+MAINTAINER Santiago Gonzalez "santiagogonzalezbogado@gmail.com"
+
+LABEL version="0.0.1"
+LABEL description="Main container for the maintainer"
+
+RUN zypper --non-interactive update
+
+RUN zypper --non-interactive install -y \
+  autoconf \
+  automake \
+  bat \
+  cmake \
+  curl \
+  exa \
+  flatpak \
+  flatpak-spawn \
+  flatpak-xdg-utils \
+  fuse \
+  fuse-devel \
+  fzf \
+  gcc \
+  gcc-c++ \
+  gettext-tools \
+  git \
+  go \
+  gzip \
+  jq \
+  kde-cli-tools5 \
+  libnotify-tools \
+  libtool \
+  make \
+  ninja \
+  python \
+  ripgrep \
+  rsync \
+  tar \
+  unzip \
+  wl-clipboard \
+  xdg-desktop-portal \
+  xdg-desktop-portal-gtk \
+  xdg-desktop-portal-kde \
+  xdg-menu \
+  xdg-user-dirs \
+  xdg-user-dirs-gtk \
+  xdg-utils \
+  zsh
+
+RUN zypper clean
+
+RUN chsh -s /usr/bin/zsh
+
+CMD /bin/bash
