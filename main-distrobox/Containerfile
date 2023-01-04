@@ -56,6 +56,6 @@ RUN zypper --non-interactive install -y \
 
 RUN zypper clean
 
-RUN chsh -s /usr/bin/zsh
+RUN usermod -s /bin/zsh root
 
 CMD /bin/bash

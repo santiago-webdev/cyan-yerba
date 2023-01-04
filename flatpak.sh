@@ -11,9 +11,8 @@ flatpak --user -y upgrade
 flatpak --user -y install flathub \
 	com.github.tchx84.Flatseal \
 	com.google.Chrome \
+        org.mozilla.firefox \
 	im.riot.Riot \
 	io.mpv.Mpv \
 	org.inkscape.Inkscape \
-	org.kde.gwenview \
-	org.kde.okular \
 	org.qbittorrent.qBittorrent \

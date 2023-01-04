@@ -8,9 +8,11 @@
 # In the last screen of the installer you can install one or two missing packages for KDE that provide thumbnail support for Dolphin
 # and other software like toolbox(which I don't need right now).
 #
+#
 # FULL_DISK_ENCRYPTION:
 # In the last screen of the installer you can choose "Partitions" and
 # there you'll be able to select "Guided Setup"
+#
 #
 # PASSWORD:
 # I use dvorak, but when decrypting the drive the layout is en(US), so
@@ -19,6 +21,7 @@
 # asks you to put the password you put that one that you wrote. So when
 # you need to decrypt your drive you'll type it just like as if you
 # were using a dvorak layout keyboard.
+#
 #
 # AUTOLOGIN_AND_PLASMA_WAYLAND_SESSION:
 # In the installer you can set this up when creating your user. After
@@ -69,22 +72,8 @@
 # container again and hopefully zsh and zap will work properly.
 #
 #
-# RUST_TOOLS:
-# https://rustup.rs/
-# To install run:
-# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-#
-#
-# FNM:
-# https://github.com/Schniz/fnm
-# To install run:
-# cargo install fnm
-# After compilation restart your shell/session and setup node:
-# fnm install --lts
-#
-#
-# DEVELOPMENT:
-# npm install --global prettier live-server yarn
+# DEVELOPMENT_TOOLS
+# Run tools.sh, a scripts that is in by dotfiles
 #
 #
 # NEOVIM:
