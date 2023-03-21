@@ -15,12 +15,9 @@
 #
 #
 # PASSWORD:
-# I use dvorak, but when decrypting the drive the layout is en(US), so
-# I type the password in the en(US) layout but as if I were typing it
-# in dvorak, then switch to the dvorak layout and when the installer
-# asks you to put the password you put that one that you wrote. So when
-# you need to decrypt your drive you'll type it just like as if you
-# were using a dvorak layout keyboard.
+# I use dvorak, so in the first screen of the microos installer you are going to type with the default US qwerty layout your password in the type test propt bar, and you are going to remember it
+# even though it's not your real password, after that switch to dvorak and reach the end of the installer, in the last screen go to Partition, guided partitioning, when asked for a password type the characters
+# that you remembered in the first prompt with that US qwerty layout, so now each time you start your computer you can type your password as if you were typing it in dvorak even though the luks2 decryption screen is using the qwerty layout.
 #
 #
 # AUTOLOGIN_AND_PLASMA_WAYLAND_SESSION:
