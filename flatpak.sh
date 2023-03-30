@@ -8,11 +8,13 @@ flatpak --user -y upgrade
 
 # flatpak install flathub io.gitlab.librewolf-community -y
 # flatpak install flathub org.videolan.VLC -y
-# flatpak --user -y install flathub \
-# 	com.github.tchx84.Flatseal \
-# 	com.google.Chrome \
-#         org.mozilla.firefox \
-# 	im.riot.Riot \
-# 	io.mpv.Mpv \
-# 	org.inkscape.Inkscape \
-# 	org.qbittorrent.qBittorrent \
+  # im.riot.Riot \
+  # org.qbittorrent.qBittorrent \
+flatpak --user -y install flathub \
+  com.github.tchx84.Flatseal \
+  com.google.Chrome \
+  com.brave.Browser \
+  io.mpv.Mpv \
+  org.inkscape.Inkscape \
+  org.kde.gwenview \
+  org.kde.okular \
