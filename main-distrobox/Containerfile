@@ -20,6 +20,7 @@ RUN zypper --non-interactive install -y \
   cmake \
   curl \
   exa \
+  ffmpeg-4 \
   flatpak \
   flatpak-spawn \
   flatpak-xdg-utils \

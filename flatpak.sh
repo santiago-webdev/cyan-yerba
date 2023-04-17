@@ -6,15 +6,15 @@ flatpak --user remote-add --if-not-exists kdeapps --from https://distribute.kde.
 flatpak --user update --appstream
 flatpak --user -y upgrade
 
-# flatpak install flathub io.gitlab.librewolf-community -y
-# flatpak install flathub org.videolan.VLC -y
-  # im.riot.Riot \
-  # org.qbittorrent.qBittorrent \
 flatpak --user -y install flathub \
-  com.github.tchx84.Flatseal \
   com.google.Chrome \
-  com.brave.Browser \
+  com.obsproject.Studio \
+  im.riot.Riot \
   io.mpv.Mpv \
+  org.blender.Blender \
   org.inkscape.Inkscape \
   org.kde.gwenview \
   org.kde.okular \
+  org.kde.okular \
+  org.qbittorrent.qBittorrent \
+  org.qbittorrent.qBittorrent \
