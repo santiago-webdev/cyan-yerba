@@ -7,6 +7,7 @@ flatpak --user update --appstream
 flatpak --user -y upgrade
 
 flatpak --user -y install flathub \
+  com.brave.Browser \
   com.google.Chrome \
   com.obsproject.Studio \
   im.riot.Riot \
@@ -16,5 +17,4 @@ flatpak --user -y install flathub \
   org.kde.gwenview \
   org.kde.okular \
   org.kde.okular \
-  org.qbittorrent.qBittorrent \
   org.qbittorrent.qBittorrent \
