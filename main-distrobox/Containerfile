@@ -33,12 +33,14 @@ RUN zypper --non-interactive install -y \
   git \
   go \
   gzip \
+  ImageMagick \
   jq \
   kde-cli-tools5 \
   libnotify-tools \
   libtool \
   make \
   ninja \
+  password-store \
   python \
   ripgrep \
   rsync \
